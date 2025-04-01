@@ -1,0 +1,158 @@
+Objetivo: Desenvolver um painel administrativo web completo para gerenciar um bot do Telegram que administra grupos. O projeto deve ser independente de qualquer plataforma específica e compatível com serviços de hospedagem como PythonAnywhere.
+
+Requisitos Funcionais:
+
+Gerenciamento de Mensagens Promocionais:
+
+Criar, editar e excluir posts promocionais.
+
+Configurar o intervalo entre envios (padrão: 10 minutos).
+
+Suporte para texto, imagens e links externos.
+
+Selecionar posts aleatoriamente para envio automático.
+
+
+Sistema de Boas-Vindas:
+
+Configurar mensagens personalizadas para novos membros.
+
+Suporte para variáveis ({first_name}, {last_name}, {username}).
+
+Detectar automaticamente novos membros.
+
+
+Controle do Bot:
+
+Ativar/desativar o bot com indicador visual de status.
+
+Configurar token e ID do grupo.
+
+Exibir status do bot (online/offline).
+
+
+Interface e Usabilidade:
+
+Interface em português.
+
+
+Requisitos Técnicos:
+
+Tecnologias:
+
+Backend: Flask (Python).
+
+Frontend: HTML5, CSS, JavaScript.
+
+Armazenamento: Arquivos JSON para configuração e posts.
+
+API Telegram: python-telegram-bot.
+
+
+Estrutura de Arquivos:
+
+Modularização em bot_handler, data_manager, scheduler.
+
+Arquivos de template para cada página do painel.
+
+Sistema de logs detalhado.
+
+Estrutura de diretórios organizada.
+
+
+Segurança:
+
+Proteção de acesso ao painel.
+
+Armazenamento seguro do token do Telegram.
+
+Validação de entradas em formulários.
+
+Tratamento adequado de erros.
+
+
+Persistência:
+
+Sistema de backup periódico.
+
+Armazenamento consistente das configurações.
+
+Reinicialização automática após atualizações.
+
+
+Deployment:
+
+Compatibilidade com PythonAnywhere.
+
+Arquivo wsgi.py para configuração.
+
+requirements.txt com dependências.
+
+Suporte para webhooks e polling.
+
+
+Funcionalidades Específicas:
+
+Dashboard Principal:
+
+Exibir status do bot.
+
+Estatísticas de mensagens enviadas.
+
+Acesso rápido às principais funções.
+
+
+Página de Posts Promocionais:
+
+Lista de posts em cards/tabela.
+
+Formulário para criar/editar posts.
+
+Botão para testar envio de post.
+
+Visualização prévia do post.
+
+
+Página de Configuração de Boas-Vindas:
+
+Editor de texto com suporte a variáveis.
+
+Botão para testar mensagem.
+
+Opção para ativar/desativar mensagens automáticas.
+
+
+Página de Configurações:
+
+Campos para token do bot e ID do grupo.
+
+Configuração do intervalo entre posts promocionais.
+
+Botão para reiniciar o bot.
+
+
+Logs e Diagnósticos:
+
+Exibir logs recentes.
+
+Diagnóstico para resolução de problemas.
+
+Status de conexão com a API do Telegram.
+
+
+Considerações de Implementação:
+
+Garantir atualização robusta de posts para evitar problemas de cache.
+
+Implementar verificação periódica de novos membros via API do Telegram.
+
+Criar fallback para falhas de conexão com a API.
+
+Otimizar para funcionar bem em planos de hospedagem gratuitos.
+
+Documentar claramente a configuração e manutenção do sistema.
+
+O projeto deve ser modular, com código limpo e comentado, facilitando futuras manutenções e expansões.
+
+
+
